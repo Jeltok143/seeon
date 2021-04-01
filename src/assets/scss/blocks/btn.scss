@@ -1,0 +1,126 @@
+.btn__orange {
+  position: relative;
+  z-index: 3;
+  border: none;
+  background-color: $orange;
+  border-radius: 100px;
+  transition: background-color .1s linear, border .2s linear;
+  color: #fff;
+  font-family: 'Futura';
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1.7rem 5.5rem 1.8rem 3.5rem;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: $orange-light;
+  }
+
+  @include breakpoint($laptop) {
+    padding: 1.2rem 2rem 1.3rem 2rem;
+  }
+
+  @include breakpoint($tablet) {
+    display: none;
+
+    &--show {
+      display: block;
+    }
+  }
+}
+
+.active-menu {
+  border-color: #fff;
+  color: #fff;
+  background-color: transparent;
+}
+
+.btn__line {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -59px;
+  transition: background-color .2s linear;
+  width: 90px;
+  height: 1px;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 35%, rgba(244,98,68,1) 35%);
+
+  &--orange {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -59px;
+    width: 90px;
+    height: 1px;
+    background-color: $orange;
+
+    @include breakpoint($laptop) {
+      display: none;
+    }
+  }
+
+  @include breakpoint($laptop) {
+    display: none;
+  }
+}
+
+.btn__active {
+  background-color: #fff;
+  background: #fff;
+}
+
+.btn__white {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  border: none;
+  background-color: #fff;
+  border-radius: 100px;
+  transition: background-color .1s linear, border .2s linear;
+  color: $orange;
+  font-family: 'Futura';
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1.7rem 5.5rem 1.8rem 3.5rem;
+  border: 1px solid $orange;
+
+  @include breakpoint($laptop) {
+    padding: 1.2rem 2rem 1.3rem 2rem;
+  }
+}
+
+.burger-active {
+  z-index: -1;
+}
+
+.btn__choice {
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  border-radius: 100px;
+  transition: background-color .1s linear, border .2s linear, color .2s linear;
+  color: $gray;
+  font-family: 'Futura';
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 1.7rem 2.4rem;
+  border: 1px solid transparent;
+  margin-right: 3rem;
+  margin-bottom: 3rem;
+  white-space: nowrap;
+
+  &--active {
+    border: 1px solid $orange;
+    color: $orange;
+  }
+
+  &:hover {
+    background-color: $orange;
+    color: #fff;
+    box-shadow: 0px 15px 30px rgba(244, 98, 68, 0.2);
+  }
+}

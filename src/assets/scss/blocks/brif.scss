@@ -1,0 +1,41 @@
+.brif {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.brif__inner {
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: $light-blue;
+    width: 120px;
+    height: 511px;
+    top: 215px;
+    left: -35px;
+
+    @include breakpoint($big-desktop) {
+      display: none;
+    }
+  }
+}
+
+.brif__title {
+  font-size: 4rem;
+  color: $orange;
+  text-transform: uppercase;
+  font-family: 'Tenor Sans';
+  letter-spacing: .2rem;
+
+  @include breakpoint($phone) {
+    font-size: 3.5rem;
+  }
+}
+
+.brif__subtitle {
+  font-size: 2.4rem;
+  color: $gray;
+  font-family: 'Tenor Sans';
+  margin-bottom: 4rem;
+}

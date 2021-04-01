@@ -1,0 +1,81 @@
+.page__input {
+  border: none;
+  border-bottom: .5px solid #4B575C;
+  width: 100%;
+  margin-bottom: 5rem;
+  height: 45px;
+  color: $orange;
+
+  &::placeholder {
+    font-size: 1.8rem;
+    font-family: 'Futura';
+    font-weight: 300;
+    padding-left: .5rem;
+    padding-bottom: 0.5rem;
+    transition: opacity .2s linear;
+    color: $gray;
+  }
+
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+
+  &--task {
+    max-width: 500px;
+    text-overflow: ellipsis;
+  }
+
+  &--contact {
+    position: relative;
+    max-width: 280px;
+    font-family: 'Futura';
+    font-weight: 300;
+
+    &::placeholder {
+      font-size: 1.8rem;
+      font-family: 'Futura';
+      font-weight: 300;
+      padding-left: .5rem;
+      padding-bottom: 0.5rem;
+      transition: opacity .2s linear;
+      color: $gray;
+    }
+
+    @include breakpoint($phone) {
+      max-width: 250px;
+    }
+  }
+}
+
+.page__block-input {
+  border: none;
+  border-bottom: .5px solid #4B575C;
+  margin-bottom: 5rem;
+  height: 45px;
+  color: $orange;
+
+  &::placeholder {
+    font-size: 1.8rem;
+    font-family: 'Futura';
+    font-weight: 300;
+    padding-left: .5rem;
+    transition: opacity .2s linear;
+    color: $gray;
+  }
+
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+
+  @include breakpoint($tablet) {
+    width: 100%;
+  }
+
+  @include breakpoint($phone) {
+    max-width: 250px;
+  }
+}

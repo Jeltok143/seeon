@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Futura';
+  src: url("../fonts/FuturaPT-Light.woff2"),
+  url("../fonts/FuturaPT-Light.woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url("../fonts/FuturaPT-Book.woff2"),
+  url("../fonts/FuturaPT-Book.woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Caveat';
+  src: url("../fonts/Caveat.woff2"),
+  url("../fonts/Caveat.woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tenor Sans';
+  src: url("../fonts/TenorSans.woff2"),
+  url("../fonts/TenorSans.woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+@import 'mixin';
+@import 'vendor/reset';
+@import 'vars';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  font-family: Tenor Sans;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+// Blocks
+@import 'blocks/container.scss';
+@import 'blocks/helpers.scss';
+@import 'blocks/header.scss';
+@import 'blocks/nav.scss';
+@import 'blocks/main.scss';
+@import 'blocks/btn.scss';
+@import 'blocks/brif.scss';
+@import 'blocks/page.scss';
+@import 'blocks/service.scss';
+@import 'blocks/budget.scss';
+@import 'blocks/task.scss';
+@import 'blocks/contact-info.scss';
+@import 'blocks/wedo.scss';
+@import 'blocks/text-block.scss';
+@import 'blocks/brands.scss';
+@import 'blocks/claim.scss';
+@import 'blocks/we.scss';
+@import 'blocks/founders.scss';
+@import 'blocks/vacancy.scss';
+@import 'blocks/contact.scss';
+@import 'blocks/footer.scss';

@@ -1,0 +1,193 @@
+.main {
+  background: rgb(227,241,246);
+  background: linear-gradient(90deg, rgba(227,241,246,1) 50%, rgba(255,255,255,0) 50%);
+}
+
+.main__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 9rem;
+
+  @include breakpoint($laptop) {
+    padding-top: 7rem;
+  }
+
+  @include breakpoint($tablet) {
+    padding-top: 5rem;
+  }
+}
+
+.main__logo {
+  height: 11rem;
+  width: 54rem;
+  margin-bottom: 9rem;
+
+  @include breakpoint($desktop) {
+    width: 44rem;
+    height: 9rem;
+    margin-bottom: 8rem;
+  }
+
+  @include breakpoint($laptop) {
+    width: 40rem;
+    height: 8rem;
+    margin-bottom: 7rem;
+  }
+
+  @include breakpoint($tablet) {
+    width: 35rem;
+    height: 7rem;
+    margin-bottom: 6rem;
+  }
+
+  @include breakpoint($phone) {
+    width: 27rem;
+    height: 5.5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.main__title {
+  font-size: 4.8rem;
+  color: $gray;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.3;
+  letter-spacing: .3rem;
+
+  @include breakpoint($laptop) {
+    font-size: 4.4rem;
+  }
+
+  @include breakpoint($tablet) {
+    font-size: 3.5rem;
+    letter-spacing: .2rem;
+  }
+
+  @include breakpoint($phone) {
+    font-size: 3rem;
+    letter-spacing: 0rem;
+  }
+}
+
+.main__text {
+  margin-top: 3rem;
+  font-family: Futura;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: .3rem;
+  color: $gray;
+
+  @include breakpoint($laptop) {
+    font-size: 2.5rem;
+  }
+
+  @include breakpoint($tablet) {
+    font-size: 2rem;
+    letter-spacing: .2rem;
+  }
+
+  @include breakpoint($phone) {
+    font-size: 1.8rem;
+  }
+}
+
+.main__message {
+  position: fixed;
+  bottom: 40px;
+  z-index: 3;
+  display: flex;
+  align-self: flex-end;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 15px 15px 45px rgba(0, 0, 0, 0.1);  
+
+
+  &:hover {
+    .main__message-icon {
+      fill: $orange;
+    }
+  }
+
+  & > div {
+    fill: $gray;
+  }
+
+  &--left {
+    right: 40px;
+  }
+
+  @include breakpoint($laptop) {
+    padding: 1rem;
+  }
+}
+
+.main__message--active {
+  transition: margin-left .2s linear;
+  z-index: 4;
+  margin-left: -200px;
+
+  @include breakpoint($tablet) {
+    margin-left: 20px;
+    right: auto;
+  }
+}
+
+.main__message-icon {
+  transition: fill .2s linear;
+  height: 30px;
+  width: 33.5px;
+
+  @include breakpoint($laptop) {
+    height: 20px;
+    width: 23.5px;
+  }
+}
+
+.main__subtitle {
+  margin-top: 8rem;
+  font-size: 1.4rem;
+  font-family: Tenor Sans;
+
+  @include breakpoint($tablet) {
+    margin-top: 7rem;
+  }
+}
+
+.main__subtitle::after {
+  content: "";
+  display: block;
+  height: 120px;
+  width: 1px;
+  background-color: $orange;
+  margin-left: 50%;
+  right: -50%;
+  margin-top: 35px;
+  margin-bottom: -10px;
+
+  @include breakpoint($tablet) {
+    height: 100px;
+  }
+
+  @include breakpoint($phone) {
+    height: 70px;
+  }
+}
+
+.main__down {
+  font-size: 1.4rem;
+  color: $orange;
+  font-family: Tenor Sans;
+  text-align: center;
+
+  @include breakpoint($tablet) {
+    font-size: 1.2rem;
+  }
+
+  @include breakpoint($phone) {
+    font-size: 1.15rem;
+  }
+}

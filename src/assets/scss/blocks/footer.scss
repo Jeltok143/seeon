@@ -1,0 +1,201 @@
+.footer {
+  background-color: $light-blue;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: flex-start;
+  padding: 8rem 0;
+  flex-wrap: wrap;
+
+  @include breakpoint($desktop) {
+    justify-content: center;
+    padding: 6.5rem 0;
+  }
+
+  @include breakpoint($phone) {
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+}
+
+.footer__phone {
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint($desktop) {
+    width: 25%;
+  }
+
+  @include breakpoint($tablet) {
+    width: 50%;
+  }
+
+  @include breakpoint($phone) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__email {
+  width: 11%;
+  margin-left: 10rem;
+  margin-right: 5rem;
+
+  @include breakpoint($desktop) {
+    width: 25%;
+  }
+
+  @include breakpoint($tablet) {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @include breakpoint($phone) {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__write {
+  width: 11%;
+  margin-left: 5rem;
+  margin-right: 5rem;
+
+  @include breakpoint($desktop) {
+    width: 26%;
+    margin-top: 3rem;
+  }
+
+  @include breakpoint($tablet) {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+    @include breakpoint($phone) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__social {
+  width: 11%;
+  margin-left: 5rem;
+  margin-right: 5rem;
+
+  @include breakpoint($desktop) {
+    width: 25%;
+    margin-top: 3rem;
+  }
+
+  @include breakpoint($tablet) {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+    @include breakpoint($phone) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__title {
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+  color: $gray;
+  font-family: 'Futura';
+  font-weight: 400;
+
+  @include breakpoint($phone) {
+    text-align: center;
+  }
+}
+
+.footer__number {
+  margin-bottom: 3rem;
+  text-decoration: none;
+  color: $gray;
+  font-family: 'Futura';
+  transition: color .2s linear;
+
+  &:hover {
+    color: $orange;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer__email-adress {
+  font-size: 1.8rem;
+  color: $gray;
+  font-family: 'Futura';
+  text-decoration: none;
+  transition: color .2s linear;
+
+  &:hover {
+    text-decoration: underline;
+    color: $orange;
+  }
+}
+
+.footer__icons {
+  display: flex;
+
+  & > a {
+    text-decoration: none;
+    margin-left: 3rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.footer__icon {
+  fill: $gray;
+  width: 20px;
+  height: 20px;
+  transition: fill .2s linear;
+
+  &:hover {
+    fill: $orange;
+  }
+}
+
+.footer__line {
+  opacity: 0.1;
+  border: 1px solid #000000;
+}
+
+.footer__bottom {
+  padding: 5.5rem 0;
+
+  @include breakpoint($tablet) {
+    padding: 3.5rem 0;
+  }
+
+  @include breakpoint($phone) {
+    padding: 1.5rem 0;
+  }
+}
+
+.footer__bottom-title {
+  font-size: 1.8rem;
+  font-family: 'Futura';
+  color: $gray;
+}

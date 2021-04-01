@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/assets/js/app.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -93,29 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("let burgerNav = document.querySelector('.toggler');\r\nlet burgerClose = document.querySelector('.btn__white');\r\nlet buttonOrder = document.querySelector('.btn__orange');\r\nlet mainLogo = document.querySelector('.header__icon');\r\nlet buttonLine = document.querySelector('.btn__line');\r\nlet mainContact = document.querySelector('.main__message');\r\n\r\nburgerNav.onclick = function () {\r\n  buttonOrder.classList.toggle('active-menu');\r\n  mainLogo.classList.toggle('header__icon--white');\r\n  buttonLine.classList.toggle('btn__active');\r\n  mainContact.classList.toggle('main__message--active');\r\n  // burgerClose.classList.toggle('burger-active');\r\n\r\n  if (buttonOrder.classList.contains('active-menu')) {\r\n    document.body.classList.add('no-scroll');\r\n  } else {\r\n    document.body.classList.remove('no-scroll');\r\n  }\r\n}\r\n\r\n//Fixed header\r\n\r\nwindow.onscroll = function() {scrollFunction()};\r\n\r\nfunction scrollFunction() {\r\n  let scrollPos = 200;\r\n  let header = document.querySelector('.header');\r\n\r\n  if (document.body.scrollTop > scrollPos ||\r\n    document.documentElement.scrollTop > scrollPos) {\r\n    header.classList.add('active');\r\n  } \r\n  else\r\n  {\r\n    header.classList.remove('active');\r\n  }\r\n}\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
-
-/***/ }),
-
-/***/ "./src/assets/js/choice.js":
-/*!*********************************!*\
-  !*** ./src/assets/js/choice.js ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// let brifBtn = document.querySelector('.test');\r\n\r\n// brifBtn.onclick = function () {\r\n//   let btnClick = document.querySelectorAll('.btn__choice');\r\n\r\n//   btnClick.classList.toggle('active');\r\n// }\n\n//# sourceURL=webpack:///./src/assets/js/choice.js?");
-
-/***/ }),
-
-/***/ 0:
-/*!**************************************************************!*\
-  !*** multi ./src/assets/js/app.js ./src/assets/js/choice.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("__webpack_require__(/*! D:\\WebDev\\see_on\\src\\assets\\js\\app.js */\"./src/assets/js/app.js\");\nmodule.exports = __webpack_require__(/*! D:\\WebDev\\see_on\\src\\assets\\js\\choice.js */\"./src/assets/js/choice.js\");\n\n\n//# sourceURL=webpack:///multi_./src/assets/js/app.js_./src/assets/js/choice.js?");
+eval("let burgerNav = document.querySelector('.toggler');\r\nlet burgerClose = document.querySelector('.btn__white');\r\nlet buttonOrder = document.querySelector('.btn__orange');\r\nlet mainLogo = document.querySelector('.header__icon');\r\nlet buttonLine = document.querySelector('.btn__line');\r\nlet mainContact = document.querySelector('.main__message');\r\n\r\n\r\nburgerNav.onclick = function () {\r\n  buttonOrder.classList.toggle('active-menu');\r\n  mainLogo.classList.toggle('header__icon--white');\r\n  buttonLine.classList.toggle('btn__active');\r\n  mainContact.classList.toggle('main__message--active');\r\n  // burgerClose.classList.toggle('burger-active');\r\n\r\n  if (buttonOrder.classList.contains('active-menu')) {\r\n    document.body.classList.add('no-scroll');\r\n  } else {\r\n    document.body.classList.remove('no-scroll');\r\n  }\r\n}\r\n\r\n//Fixed header\r\n\r\nwindow.onscroll = function() {scrollFunction()};\r\n\r\nfunction scrollFunction() {\r\n  let scrollPos = 200;\r\n  let header = document.querySelector('.header');\r\n\r\n  if (document.body.scrollTop > scrollPos ||\r\n    document.documentElement.scrollTop > scrollPos) {\r\n    header.classList.add('active');\r\n  } \r\n  else\r\n  {\r\n    header.classList.remove('active');\r\n  }\r\n}\n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
 
 /***/ })
 

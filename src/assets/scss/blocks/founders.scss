@@ -1,0 +1,148 @@
+.founders {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+
+  @include breakpoint($desktop) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  @include breakpoint($laptop) {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  @include breakpoint($tablet) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  @include breakpoint($phone) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.founders__title, .founders__subtitle {
+  text-align: center;
+  font-size: 4rem;
+  color: $orange;
+  font-family: 'Tenor Sans';
+  text-transform: uppercase;
+  line-height: 1.19;
+
+  @include breakpoint($desktop) {
+    font-size: 3.5rem;
+  }
+
+  @include breakpoint($laptop) {
+    font-size: 3.1rem;
+  }
+
+  @include breakpoint($tablet) {
+    font-size: 2.7rem;
+  }
+
+  @include breakpoint($phone) {
+    font-size: 2.3rem;
+  }
+}
+
+.founders__block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 9rem;
+  padding-bottom: 13rem;
+
+  @include breakpoint($desktop) {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  @include breakpoint($laptop) {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  @include breakpoint($tablet) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  @include breakpoint($phone) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.founders__block-item {
+  padding: 3rem;
+}
+
+.founders__photo {
+  max-height: 100%;
+  object-fit: cover;
+
+  @include breakpoint($desktop) {
+    width: 400px;
+    height: auto;
+  }
+
+  @include breakpoint($laptop) {
+    width: 390px;
+    height: auto;
+  }
+
+  @include breakpoint($tablet) {
+    width: 360px;
+    height: auto;
+  }
+
+  @include breakpoint($phone) {
+    width: 220px;
+    height: auto;
+  }
+}
+
+.founders__name {
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
+  font-size: 3.6rem;
+  font-family: 'Tenor Sans';
+  color: $gray;
+  font-weight: 400;
+  text-align: center;
+
+  @include breakpoint($desktop) {
+    font-size: 3.4rem;
+  }
+
+  @include breakpoint($laptop) {
+    font-size: 3rem;
+  }
+
+  @include breakpoint($tablet) {
+    font-size: 2.5rem;
+  }
+
+  @include breakpoint($phone) {
+    font-size: 2.2rem;
+  }
+}
+
+.founders__prof {
+  font-size: 1.8rem;
+  color: $gray;
+  font-family: 'Futura';
+  font-weight: 400;
+  text-align: center;
+
+  @include breakpoint($desktop) {
+    font-size: 1.7rem;
+  }
+
+  @include breakpoint($laptop) {
+    font-size: 1.6rem;
+  }
+}

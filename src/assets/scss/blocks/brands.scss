@@ -1,0 +1,42 @@
+.brands {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint($tablet) {
+    padding-top: 0;
+    padding-bottom: 3rem;
+  }
+}
+
+.brands__item {
+  margin-bottom: 15rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: $gray;
+  font-size: 9rem;
+
+  &:first-child {
+    margin-top: 15rem;
+
+    @include breakpoint($desktop) {
+      margin-top: 10rem;
+    }
+  }
+
+  @include breakpoint($desktop) {
+    font-size: 6rem;
+    margin-bottom: 10rem;
+  }
+
+  @include breakpoint($laptop) {
+    font-size: 5rem;
+    margin-bottom: 7rem;
+  }
+
+  @include breakpoint($tablet) {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+}
