@@ -1137,6 +1137,12 @@ body {
 }
 
 @media (max-width: 992px) {
+    .btn__line--orange {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
     .btn__line {
         display: none;
     }
@@ -1162,6 +1168,12 @@ body {
     text-align: center;
     padding: 1.7rem 5.5rem 1.8rem 3.5rem;
     border: 1px solid #F46244;
+}
+
+@media (max-width: 992px) {
+    .btn__white {
+        padding: 1.2rem 2rem 1.3rem 2rem;
+    }
 }
 
 .burger-active {
@@ -1714,8 +1726,31 @@ body {
 }
 
 .vacancy {
-    padding-top: 15rem;
-    padding-bottom: 15rem;
+    padding: 15rem 0;
+}
+
+@media (max-width: 1199px) {
+    .vacancy {
+        padding: 12rem 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .vacancy {
+        padding: 8rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .vacancy {
+        padding: 4rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .vacancy {
+        padding: 2rem 0;
+    }
 }
 
 .vacancy__inner {
@@ -1725,8 +1760,29 @@ body {
     justify-content: space-around;
 }
 
+@media (max-width: 1199px) {
+    .vacancy__inner {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+}
+
 .vacancy__left {
     width: 40%;
+}
+
+@media (max-width: 1199px) {
+    .vacancy__left {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 1199px) {
+    .vacancy__right {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
 }
 
 .vacancy__title {
@@ -1738,6 +1794,12 @@ body {
     letter-spacing: 0.2rem;
     text-align: left;
     margin-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+    .vacancy__title {
+        margin-bottom: 3rem;
+    }
 }
 
 .vacancy__text {
@@ -1908,6 +1970,12 @@ body {
 
 .vacancy__block-input:focus::placeholder {
     opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .vacancy__block-input {
+        width: 100%;
+    }
 }
 
 .contact {
